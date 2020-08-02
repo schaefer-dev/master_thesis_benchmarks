@@ -1,0 +1,1 @@
+{"inputs":["otherCarsStop"],"outputs":["drive"],"semantics":"mealy","assumptions":["!otherCarsStop","X(!otherCarsStop)","X(X(!otherCarsStop))","X(X(X(!otherCarsStop)))","F(otherCarsStop)"],"guarantees":["F drive","G(drive -> otherCarsStop)"]}

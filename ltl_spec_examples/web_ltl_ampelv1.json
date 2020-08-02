@@ -1,0 +1,1 @@
+{"inputs":["red","yellow"],"outputs":["drive"],"semantics":"mealy","assumptions":["red","G(F(yellow))","G(red -> ! X(!yellow && !red))","G(red -> X(red U (yellow && X(!yellow && !red))))","G(red -> !yellow)","G(yellow -> !red)"],"guarantees":["F drive","G(drive -> (!red && !yellow))"]}
