@@ -1,0 +1,27 @@
+digraph graphname {
+        _init [style="invis"];
+        _init -> s0[label=""];
+        s0[label=""];
+        s1[label="{a}"];
+        s2[label=""];
+        s3[label="{a}"];
+        s4[label=""];
+        s5[label=""];
+        s6[label=""];
+        s7[label=""];
+        s8[label=""];
+        s9[label="{a}"];
+        s0 -> s1 [label=""];
+        s0 -> s2 [label=""];
+        s1 -> s3 [label=""];
+        s1 -> s4 [label=""];
+        s2 -> s5 [label=""];
+        s2 -> s6 [label=""];
+        s3 -> s7 [label=""];
+        s4 -> s4 [label=""];
+        s5 -> s8 [label=""];
+        s6 -> s9 [label=""];
+        s7 -> s7 [label=""];
+        s8 -> s8 [label=""];
+        s9 -> s9 [label=""];
+}

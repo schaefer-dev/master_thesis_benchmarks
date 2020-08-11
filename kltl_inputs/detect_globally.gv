@@ -1,0 +1,15 @@
+digraph graphname {
+        _init [style="invis"];
+        _init -> s0[label=""];
+        s0[label="{a}"];
+        s1[label="{a}"];
+        s2[label="{a}"];
+        s3[label="{}"];
+        s4[label="{a}"];
+        s0 -> s1 [label=""];
+        s0 -> s2 [label=""];
+        s1 -> s3 [label=""];
+        s2 -> s4 [label=""];
+        s4 -> s4 [label=""];
+        s3 -> s3 [label=""];
+}

@@ -1,0 +1,9 @@
+{
+    "observableAP": ["a"],
+    "hiddenAP": [],
+    "outputs": ["go"],
+    "guarantees": [
+        "G (go <-> (K(X a)))",
+    ],
+}
+
