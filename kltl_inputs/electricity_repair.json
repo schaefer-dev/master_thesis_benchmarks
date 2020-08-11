@@ -1,0 +1,11 @@
+{
+    "observableAP": [],
+    "hiddenAP": ["electricity", "test"],
+    "outputs": ["button", "repair"],
+    "guarantees": [
+        "G (repair -> K(!electricity))",
+        "F (repair)",
+        "!repair",
+    ],
+}
+

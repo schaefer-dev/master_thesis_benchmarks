@@ -1,0 +1,10 @@
+{
+    "observableAP": ["r1"],
+    "hiddenAP": ["sleep", "backupinit", "backup", "backupcomplete"],
+    "outputs": ["g1"],
+    "guarantees": [
+        "G (r1 -> F(g1))",
+        "(¬g1) U r1",
+    ],
+}
+

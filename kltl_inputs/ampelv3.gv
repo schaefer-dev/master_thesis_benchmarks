@@ -1,0 +1,20 @@
+digraph graphname {
+        _init [style="invis"];
+        _init -> s0[label=""];
+        s0[label="{red}"];
+        s1[label="{yellow}"];
+        s2[label="{green}"];
+        s3[label="{green}"];
+        s4[label="{green}"];
+        s5[label="{green}"];
+        s0 -> s0 [label=""];
+        s0 -> s1 [label=""];
+        s1 -> s2 [label=""];
+        s2 -> s3 [label=""];
+        s3 -> s3 [label=""];
+        s3 -> s0 [label=""];
+        s0 -> s4 [label=""];
+        s4 -> s5 [label=""];
+        s5 -> s5 [label=""];
+        s5 -> s0 [label=""];
+}

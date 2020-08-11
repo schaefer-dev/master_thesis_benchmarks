@@ -1,0 +1,9 @@
+{
+    "observableAP": ["red", "yellow", "green"],
+    "hiddenAP": [],
+    "outputs": ["drive"],
+    "guarantees": [
+        "G (drive <-> (K(X green)))",
+    ],
+}
+
