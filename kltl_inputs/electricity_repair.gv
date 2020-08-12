@@ -2,7 +2,7 @@ digraph graphname {
         _init [style="invis"];
         _init -> s0[label=""];
         s0[label=""];
-        s1[label="{!electricity}"];
+        s1[label=""];
         s2[label="{electricity}"];
         s0 -> s1 [label=""];
         s0 -> s2 [label="(¬button)"];
