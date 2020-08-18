@@ -1,0 +1,11 @@
+{
+    "observableAP": ["one", "two", "three"],
+    "hiddenAP": ["c1", "c2", "c3"],
+    "outputs": ["t1", "t2", "t3"],
+    "guarantees": [
+        "G ((!t1 && !t2) || (!t1 && !t3) || (!t2 && !t3))",
+        "F (K(c1 && c2 && c3))",
+        "G (!K(!c1 && !c2 && !c3))"
+    ],
+}
+
