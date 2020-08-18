@@ -1,0 +1,9 @@
+{
+    "observableAP": ["light"],
+    "hiddenAP": ["toggle", "broken"],
+    "outputs": ["switch"],
+    "guarantees": [
+        "G (K(toggle) || K(!toggle))"
+    ],
+}
+

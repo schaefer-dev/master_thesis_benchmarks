@@ -1,0 +1,23 @@
+digraph graphname {
+        _init [style="invis"];
+        _init -> s0[label=""];
+        s0[label="{light, toggle}"];
+        s1[label="{}"];
+        s3[label="{toggle, broken}"];
+        s4[label="{broken}"];
+        s0 -> s0 [label="(¬switch)"];
+        s0 -> s1 [label="(¬switch)"];
+        s0 -> s3 [label="(¬switch)"];
+        s0 -> s4 [label="(¬switch)"];
+        s0 -> s1 [label="(switch)"];
+        s0 -> s4 [label="(switch)"];
+        s1 -> s4 [label="(¬switch)"];
+        s1 -> s1 [label="(¬switch)"];
+        s1 -> s0 [label="(switch)"];
+        s1 -> s3 [label="(switch)"];
+        s3 -> s3 [label="(¬switch)"];
+        s3 -> s4 [label="(¬switch)"];
+        s3 -> s4 [label="(switch)"];
+        s4 -> s4 [label="(¬switch)"];
+        s4 -> s3 [label="(switch)"];
+}
