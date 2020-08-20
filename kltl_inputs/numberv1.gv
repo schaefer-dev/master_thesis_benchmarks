@@ -1,0 +1,17 @@
+digraph graphname {
+        _init [style="invis"];
+        _init -> s0[label=""];
+        s0[label=""];
+        s1[label="{one}"];
+        s2[label="{two}"];
+        s3[label="{one, y1}"];
+        s4[label="{two, y2}"];
+        s0 -> s1 [label=""];
+        s0 -> s2 [label=""];
+        s2 -> s2 [label="(¬o2)"];
+        s1 -> s1 [label="(¬o1)"];
+        s1 -> s3 [label="(o1)"];
+        s2 -> s4 [label="(o2)"];
+        s3 -> s3 [label=""];
+        s4 -> s4 [label=""];
+}

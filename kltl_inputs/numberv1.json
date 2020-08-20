@@ -1,0 +1,10 @@
+{
+    "observableAP": ["y1", "y2"],
+    "hiddenAP": ["one", "two"],
+    "outputs": ["o1", "o2"],
+    "guarantees": [
+        "G (!o1 || !o2)",
+        "F (K(one) || K(two))",
+    ],
+}
+
