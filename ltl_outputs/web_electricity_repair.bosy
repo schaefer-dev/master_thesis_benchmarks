@@ -1,0 +1,33 @@
+{
+  "assumptions" : [
+    "G ((s0) -> (((! (s1)) && (! (s1s2))) && (! (s2))))",
+    "G ((s1) -> (((! (s0)) && (! (s1s2))) && (! (s2))))",
+    "G ((s1s2) -> (((! (s0)) && (! (s1))) && (! (s2))))",
+    "G ((s2) -> (((! (s0)) && (! (s1))) && (! (s1s2))))",
+    "G ((((s0) || (s1)) || (s1s2)) || (s2))",
+    "s0",
+    "G ((s0) -> ((true) && (true)))",
+    "G ((s1) -> ((true) && (true)))",
+    "G ((s1s2) -> ((true) && (true)))",
+    "G ((s2) -> ((true) && (true)))",
+    "G ((! (s0)) || ((((((! (button)) && (! (repair))) && (X (s1s2))) || (((! (button)) && (repair)) && (X (s1s2)))) || (((button) && (! (repair))) && (X (s1)))) || (((button) && (repair)) && (X (s1)))))",
+    "G ((! (s1)) || ((((((! (button)) && (! (repair))) && (X (s1s2))) || (((! (button)) && (repair)) && (X (s1s2)))) || (((button) && (! (repair))) && (X (s2)))) || (((button) && (repair)) && (X (s2)))))",
+    "G ((! (s1s2)) || ((((((! (button)) && (! (repair))) && (X (s1s2))) || (((! (button)) && (repair)) && (X (s1s2)))) || (((button) && (! (repair))) && (X (s2)))) || (((button) && (repair)) && (X (s2)))))",
+    "G ((! (s2)) || ((((! (button)) && (! (repair))) && (X (s1))) || (((! (button)) && (repair)) && (X (s1)))))"
+  ],
+  "inputs" : [
+    "s0",
+    "s1",
+    "s1s2",
+    "s2"
+  ],
+  "guarantees" : [
+    "G ((repair) -> ((s0) || (s1)))",
+    "F (repair)"
+  ],
+  "semantics" : "mealy",
+  "outputs" : [
+    "button",
+    "repair"
+  ]
+}
