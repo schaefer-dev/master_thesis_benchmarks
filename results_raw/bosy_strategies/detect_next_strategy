@@ -1,0 +1,74 @@
+daniel-VirtualBox% ./benchmark.sh detect_next    
+info: automaton contains 7 states
+info: build safety game with k=1
+info: automaton contains 7 states
+info: build safety game with k=1
+info: found solution with rejecting counter RejectingCounter(value: 1)
+info: extract game based solution
+info: build safety game with k=2
+info: build safety game with k=3
+info: build safety game with k=4
+info: build safety game with k=5
+info: build safety game with k=6
+info: build safety game with k=7
+info: build safety game with k=8
+info: build safety game with k=9
+info: build safety game with k=10
+info: build safety game with k=11
+info: build safety game with k=12
+info: build safety game with k=13
+info: build safety game with k=14
+info: build safety game with k=15
+info: build safety game with k=16
+info: build encoding for bound 1
+info: search for player environment aborted; either cancelled or max-bound reached
+info: found solution with NumberOfStates(value: 1) states
+REALIZABLE
+aag 11 5 1 1 5
+2
+4
+6
+8
+10
+12 0
+22
+14 11 8
+16 14 2
+18 7 5
+20 18 13
+22 20 16
+i0 a
+i1 s0
+i2 s1s2
+i3 s3
+i4 s4
+l0 __latch_s0
+o0 go
+c
+/tmp/.Am2RYR
+This file was written by ABC on Thu Aug 20 16:02:09 2020
+For information about AIGER format, refer to http://fmv.jku.at/aiger
+	Command being timed: "./run.sh /home/daniel/benchmarks/ltl_outputs/web_detect_next.bosy --synthesize"
+	User time (seconds): 0.49
+	System time (seconds): 0.29
+	Percent of CPU this job got: 118%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168896
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 68908
+	Voluntary context switches: 233
+	Involuntary context switches: 71
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 80
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox% 

@@ -1,0 +1,74 @@
+daniel-VirtualBox% ./benchmark.sh light_bulb        
+info: automaton contains 10 states
+info: build safety game with k=1
+info: found solution with rejecting counter RejectingCounter(value: 1)
+info: extract game based solution
+info: automaton contains 11 states
+info: build safety game with k=1
+info: build safety game with k=2
+info: build safety game with k=3
+info: build safety game with k=4
+info: build safety game with k=5
+info: build safety game with k=6
+info: build safety game with k=7
+info: build safety game with k=8
+info: build safety game with k=9
+info: build safety game with k=10
+info: build encoding for bound 1
+info: search for player environment aborted; either cancelled or max-bound reached
+info: found solution with NumberOfStates(value: 1) states
+REALIZABLE
+aag 15 7 1 1 7
+2
+4
+6
+8
+10
+12
+14
+16 0
+30
+18 17 4
+20 9 2
+22 20 18
+24 13 7
+26 15 11
+28 26 24
+30 28 22
+i0 light
+i1 s0
+i2 s1s3s4
+i3 s1s4
+i4 s3
+i5 s3s4
+i6 s4
+l0 __latch_s0
+o0 switch
+c
+/tmp/.gM4Ecd
+This file was written by ABC on Thu Aug 20 16:03:36 2020
+For information about AIGER format, refer to http://fmv.jku.at/aiger
+	Command being timed: "./run.sh /home/daniel/benchmarks/ltl_outputs/web_light_bulb.bosy --synthesize"
+	User time (seconds): 0.69
+	System time (seconds): 0.23
+	Percent of CPU this job got: 126%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 118820
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 53141
+	Voluntary context switches: 193
+	Involuntary context switches: 51
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 80
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox% 
