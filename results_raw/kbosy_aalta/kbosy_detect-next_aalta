@@ -1,0 +1,40 @@
+daniel-VirtualBox% ./benchmark.sh detect_next    
+LOADING: Automata Info read successfully
+loading dot-graph from path: /home/daniel/benchmarks/kltl_inputs/detect_next.gv
+ALGO: checking knowledge condition (X(a_p))
+ALGO: candidate state confirmed for s1
+ALGO: candidate state confirmed for s3
+DEBUG: replacing K (X (a)) with formula (s3)
+------BENCHMARK RESULTS------
+Time elapsed during candidateStateSearch(): 0.0567s.
+Time elapsed during kbsc(): 0.0009s.
+Time elapsed during main(): 0.0662s.
+Output file saved at /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy
+
+continue synthesis using Bosy:
+./bosy_run.sh /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy --synthesize
+	Command being timed: "./run.sh -i detect_next.json -d detect_next.gv --benchmark --aalta"
+	User time (seconds): 0.06
+	System time (seconds): 0.01
+	Percent of CPU this job got: 86%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19212
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4198
+	Voluntary context switches: 92
+	Involuntary context switches: 45
+	Swaps: 0
+	File system inputs: 16
+	File system outputs: 432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox% 
+

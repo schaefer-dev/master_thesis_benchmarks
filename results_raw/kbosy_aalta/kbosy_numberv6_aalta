@@ -1,0 +1,60 @@
+daniel-VirtualBox% ./benchmark.sh numberv6
+LOADING: Automata Info read successfully
+loading dot-graph from path: /home/daniel/benchmarks/kltl_inputs/numberv6.gv
+ALGO: checking knowledge condition (four_p)
+ALGO: candidate state confirmed for s6
+ALGO: candidate state confirmed for s8
+ALGO: checking knowledge condition (three_p)
+ALGO: candidate state confirmed for s5
+ALGO: candidate state confirmed for s7
+ALGO: checking knowledge condition (two_p)
+ALGO: candidate state confirmed for s2
+ALGO: candidate state confirmed for s4
+ALGO: checking knowledge condition (one_p)
+ALGO: candidate state confirmed for s1
+ALGO: candidate state confirmed for s3
+ALGO: checking knowledge condition (five_p)
+ALGO: candidate state confirmed for s11
+ALGO: candidate state confirmed for s9
+ALGO: checking knowledge condition (six_p)
+ALGO: candidate state confirmed for s10
+ALGO: candidate state confirmed for s12
+DEBUG: replacing K (one) with formula (s3)
+DEBUG: replacing K (two) with formula (s4)
+DEBUG: replacing K (three) with formula (s5 || s7)
+DEBUG: replacing K (four) with formula (s6 || s8)
+DEBUG: replacing K (five) with formula (s11 || s9)
+DEBUG: replacing K (six) with formula (s10 || s12)
+------BENCHMARK RESULTS------
+Time elapsed during candidateStateSearch(): 1.5779s.
+Time elapsed during kbsc(): 0.2925s.
+Time elapsed during main(): 2.1288s.
+Output file saved at /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy
+
+continue synthesis using Bosy:
+./bosy_run.sh /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy --synthesize
+	Command being timed: "./run.sh -i numberv6.json -d numberv6.gv --benchmark --aalta"
+	User time (seconds): 1.65
+	System time (seconds): 0.52
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 26260
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 129572
+	Voluntary context switches: 888
+	Involuntary context switches: 963
+	Swaps: 0
+	File system inputs: 16
+	File system outputs: 14880
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox% 
+
