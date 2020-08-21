@@ -1,0 +1,12 @@
+{
+    "observableAP": ["drive", "indicateLeft", "turnLeft", "pastCrossing"],
+    "hiddenAP": [],
+    "outputs": ["go", "break"],
+    "guarantees": [
+        "F( go )",
+        "(break) U K(pastCrossing || F(turnLeft))",
+        "G( go <-> K(pastCrossing || F(turnLeft))",
+        "G( go -> !break)",
+    ],
+}
+

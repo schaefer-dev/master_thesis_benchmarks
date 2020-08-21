@@ -1,0 +1,22 @@
+digraph graphname {
+        _init [style="invis"];
+        _init -> s0[label=""];
+        s0[label="{drive}"];
+        s1[label="{drive}"];
+        s2[label="{drive}"];
+        s3[label="{drive}"];
+        s4[label="{drive, indicateLeft}"];
+        s5[label="{drive}"];
+        s6[label="{drive, indicateLeft}"];
+        s7[label="{drive, turnLeft}"];
+        s8[label="{pastCrossing}"];
+        s0 -> s1 [label=""];
+        s0 -> s2 [label=""];
+        s1 -> s3 [label=""];
+        s2 -> s4 [label=""];
+        s3 -> s5 [label=""];
+        s4 -> s6 [label=""];
+        s5 -> s8 [label=""];
+        s6 -> s7 [label=""];
+        s7 -> s8 [label=""];
+}
