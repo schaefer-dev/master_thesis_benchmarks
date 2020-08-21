@@ -5,7 +5,7 @@
     "guarantees": [
         "F( go )",
         "(break) U K(pastCrossing || F(turnRight))",
-        "G( go <-> K(pastCrossing || F(turnRight))",
+        "G( go <-> K(pastCrossing || F(turnRight)))",
         "G( go -> !break)"
     ],
 }
