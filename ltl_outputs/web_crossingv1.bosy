@@ -1,0 +1,55 @@
+{
+  "outputs" : [
+    "break",
+    "go"
+  ],
+  "guarantees" : [
+    "F (go)",
+    "(break) U ((((s4) || (s6)) || (s7)) || (s8))",
+    "G ((go) <-> ((((s4) || (s6)) || (s7)) || (s8)))",
+    "G ((go) -> (! (break)))"
+  ],
+  "assumptions" : [
+    "s0",
+    "G ((s0) -> (((((((! (s1s2)) && (! (s3))) && (! (s4))) && (! (s5))) && (! (s6))) && (! (s7))) && (! (s8))))",
+    "G ((s1s2) -> (((((((! (s0)) && (! (s3))) && (! (s4))) && (! (s5))) && (! (s6))) && (! (s7))) && (! (s8))))",
+    "G ((s3) -> (((((((! (s0)) && (! (s1s2))) && (! (s4))) && (! (s5))) && (! (s6))) && (! (s7))) && (! (s8))))",
+    "G ((s4) -> (((((((! (s0)) && (! (s1s2))) && (! (s3))) && (! (s5))) && (! (s6))) && (! (s7))) && (! (s8))))",
+    "G ((s5) -> (((((((! (s0)) && (! (s1s2))) && (! (s3))) && (! (s4))) && (! (s6))) && (! (s7))) && (! (s8))))",
+    "G ((s6) -> (((((((! (s0)) && (! (s1s2))) && (! (s3))) && (! (s4))) && (! (s5))) && (! (s7))) && (! (s8))))",
+    "G ((s7) -> (((((((! (s0)) && (! (s1s2))) && (! (s3))) && (! (s4))) && (! (s5))) && (! (s6))) && (! (s8))))",
+    "G ((s8) -> (((((((! (s0)) && (! (s1s2))) && (! (s3))) && (! (s4))) && (! (s5))) && (! (s6))) && (! (s7))))",
+    "G ((((((((s0) || (s1s2)) || (s3)) || (s4)) || (s5)) || (s6)) || (s7)) || (s8))",
+    "G ((s0) -> ((((drive) && (! (indicateRight))) && (! (pastCrossing))) && (! (turnRight))))",
+    "G ((s1s2) -> ((((drive) && (! (indicateRight))) && (! (pastCrossing))) && (! (turnRight))))",
+    "G ((s3) -> ((((drive) && (! (indicateRight))) && (! (pastCrossing))) && (! (turnRight))))",
+    "G ((s4) -> ((((drive) && (indicateRight)) && (! (pastCrossing))) && (! (turnRight))))",
+    "G ((s5) -> ((((drive) && (! (indicateRight))) && (! (pastCrossing))) && (! (turnRight))))",
+    "G ((s6) -> ((((drive) && (indicateRight)) && (! (pastCrossing))) && (! (turnRight))))",
+    "G ((s7) -> ((((drive) && (turnRight)) && (! (indicateRight))) && (! (pastCrossing))))",
+    "G ((s8) -> ((((pastCrossing) && (! (drive))) && (! (indicateRight))) && (! (turnRight))))",
+    "G ((! (s0)) || ((true) && (X (s1s2))))",
+    "G ((! (s1s2)) || (((true) && (X (s4))) || ((true) && (X (s3)))))",
+    "G ((! (s3)) || ((true) && (X (s5))))",
+    "G ((! (s4)) || ((true) && (X (s6))))",
+    "G ((! (s5)) || ((true) && (X (s8))))",
+    "G ((! (s6)) || ((true) && (X (s7))))",
+    "G ((! (s7)) || ((true) && (X (s8))))",
+    "G ((! (s8)) || (⊥))"
+  ],
+  "inputs" : [
+    "drive",
+    "indicateRight",
+    "pastCrossing",
+    "s0",
+    "s1s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "turnRight"
+  ],
+  "semantics" : "mealy"
+}
