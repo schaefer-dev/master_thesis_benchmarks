@@ -1,0 +1,13 @@
+{
+    "observableAP": ["y1", "y2", "y3", "y4", "geq", "leq"],
+    "hiddenAP": ["one", "two", "three", "four"],
+    "outputs": ["o1", "o2", "o3", "o4"],
+    "guarantees": [
+        "G (o1 -> (!o2 && !o3 && !o4 ))",
+        "G (o2 -> (!o1 && !o3 && !o4 ))",
+        "G (o3 -> (!o1 && !o2 && !o4 ))",
+        "G (o4 -> (!o1 && !o2 && !o3 ))",
+        "F (K(one) || K(two) || K(three) || K(four))",
+    ],
+}
+
