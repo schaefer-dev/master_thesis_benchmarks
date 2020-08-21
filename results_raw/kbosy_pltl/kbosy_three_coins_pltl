@@ -1,0 +1,58 @@
+daniel-VirtualBox% ./benchmark.sh three_coins
+LOADING: Automata Info read successfully
+loading dot-graph from path: /home/daniel/benchmarks/kltl_inputs/three_coins.gv
+ALGO: checking knowledge condition (((!(c1_p)) & (!(c2_p))) & (!(c3_p)))
+ALGO: candidate state confirmed for s0
+ALGO: candidate state confirmed for s1
+ALGO: checking knowledge condition (((c1_p) & (c2_p)) & (c3_p))
+ALGO: candidate state confirmed for s8
+[{s0 + [[*, *, *]] --> s5s6s7}]
+[{s1 + [[0, 0, 1]] --> s4}, {s1 + [[0, 0, 0]] --> s1}, {s1 + [[1, 0, 0]] --> s2}, {s1 + [[0, 1, 0]] --> s3}]
+[{s2 + [[0, 1, 0]] --> s5}, {s2 + [[1, 0, 0]] --> s1}, {s2 + [[0, 0, 0]] --> s2}, {s2 + [[0, 0, 1]] --> s6}]
+[{s2s3 + [[0, 1, 0], [1, 0, 0]] --> s1}, {s2s3 + [[0, 0, 0]] --> s2s3}, {s2s3 + [[0, 0, 1]] --> s6}, {s2s3 + [[0, 1, 0], [1, 0, 0]] --> s5}]
+[{s2s4 + [[0, 0, 1], [1, 0, 0]] --> s1}, {s2s4 + [[0, 1, 0]] --> s5s7}, {s2s4 + [[0, 0, 0]] --> s2s4}, {s2s4 + [[0, 0, 1], [1, 0, 0]] --> s6}]
+[{s3 + [[0, 0, 1]] --> s6}, {s3 + [[0, 1, 0]] --> s1}, {s3 + [[0, 0, 0]] --> s3}, {s3 + [[1, 0, 0]] --> s5}]
+[{s3s4 + [[0, 0, 1]] --> s6}, {s3s4 + [[0, 0, 1], [0, 1, 0]] --> s1}, {s3s4 + [[0, 1, 0]] --> s7}, {s3s4 + [[0, 0, 0]] --> s3s4}, {s3s4 + [[1, 0, 0]] --> s5s6}]
+[{s4 + [[0, 1, 0]] --> s7}, {s4 + [[0, 0, 1]] --> s1}, {s4 + [[1, 0, 0]] --> s6}, {s4 + [[0, 0, 0]] --> s4}]
+[{s5 + [[0, 0, 1]] --> s8}, {s5 + [[0, 1, 0]] --> s2}, {s5 + [[0, 0, 0]] --> s5}, {s5 + [[1, 0, 0]] --> s3}]
+[{s5s6 + [[0, 0, 1], [0, 1, 0]] --> s2}, {s5s6 + [[0, 0, 1], [0, 1, 0]] --> s8}, {s5s6 + [[1, 0, 0]] --> s3s4}, {s5s6 + [[0, 0, 0]] --> s5s6}]
+[{s5s6s7 + [[0, 0, 1]] --> s2s3}, {s5s6s7 + [[0, 0, 1], [0, 1, 0], [1, 0, 0]] --> s8}, {s5s6s7 + [[0, 1, 0]] --> s2s4}, {s5s6s7 + [[0, 0, 0]] --> s5s6s7}, {s5s6s7 + [[1, 0, 0]] --> s3s4}]
+[{s5s7 + [[0, 0, 1], [1, 0, 0]] --> s8}, {s5s7 + [[0, 0, 0]] --> s5s7}, {s5s7 + [[0, 1, 0]] --> s2s4}, {s5s7 + [[0, 0, 1], [1, 0, 0]] --> s3}]
+[{s6 + [[0, 0, 0]] --> s6}, {s6 + [[0, 1, 0]] --> s8}, {s6 + [[0, 0, 1]] --> s2}, {s6 + [[1, 0, 0]] --> s4}]
+[{s7 + [[0, 0, 0]] --> s7}, {s7 + [[1, 0, 0]] --> s8}, {s7 + [[0, 1, 0]] --> s4}, {s7 + [[0, 0, 1]] --> s3}]
+[{s8 + [[0, 1, 0]] --> s6}, {s8 + [[0, 0, 0]] --> s8}, {s8 + [[1, 0, 0]] --> s7}, {s8 + [[0, 0, 1]] --> s5}]
+DEBUG: replacing K (((c1) ∧ (c2)) ∧ (c3)) with formula (s8)
+DEBUG: replacing K (((¬ (c1)) ∧ (¬ (c2))) ∧ (¬ (c3))) with formula (s0 || s1)
+------BENCHMARK RESULTS------
+Time elapsed during candidateStateSearch(): 362.2462s.
+Time elapsed during kbsc(): 0.007s.
+Time elapsed during main(): 362.2761s.
+Output file saved at /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy
+
+continue synthesis using Bosy:
+./bosy_run.sh /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy --synthesize
+	Command being timed: "./run.sh -i three_coins.json -d three_coins.gv --benchmark"
+	User time (seconds): 362.00
+	System time (seconds): 0.09
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:02.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 20108
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 21646
+	Voluntary context switches: 241
+	Involuntary context switches: 570
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox% 
+
