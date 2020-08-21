@@ -1,8 +1,23 @@
 {
+  "inputs" : [
+    "drive",
+    "indicateRight",
+    "pastCrossing",
+    "s0",
+    "s1s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "turnRight"
+  ],
   "outputs" : [
     "break",
     "go"
   ],
+  "semantics" : "mealy",
   "guarantees" : [
     "F (go)",
     "(break) U ((((s4) || (s6)) || (s7)) || (s8))",
@@ -35,21 +50,6 @@
     "G ((! (s5)) || ((true) && (X (s8))))",
     "G ((! (s6)) || ((true) && (X (s7))))",
     "G ((! (s7)) || ((true) && (X (s8))))",
-    "G ((! (s8)) || (⊥))"
-  ],
-  "inputs" : [
-    "drive",
-    "indicateRight",
-    "pastCrossing",
-    "s0",
-    "s1s2",
-    "s3",
-    "s4",
-    "s5",
-    "s6",
-    "s7",
-    "s8",
-    "turnRight"
-  ],
-  "semantics" : "mealy"
+    "G ((! (s8)) || ((true) && (X (s8))))"
+  ]
 }

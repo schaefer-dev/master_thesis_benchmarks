@@ -1,0 +1,50 @@
+daniel-VirtualBox% ./benchmark.sh crossingv1
+LOADING: Automata Info read successfully
+loading dot-graph from path: /home/daniel/benchmarks/kltl_inputs/crossingv1.gv
+ALGO: checking knowledge condition ((pastCrossing_p) | (F(turnRight_p)))
+ALGO: candidate state confirmed for s2
+ALGO: candidate state confirmed for s4
+ALGO: candidate state confirmed for s6
+ALGO: candidate state confirmed for s7
+ALGO: candidate state confirmed for s8
+[{s0 + [[*, *]] --> s1s2}]
+[{s1s2 + [[*, *]] --> s4}, {s1s2 + [[*, *]] --> s3}]
+[{s3 + [[*, *]] --> s5}]
+[{s4 + [[*, *]] --> s6}]
+[{s5 + [[*, *]] --> s8}]
+[{s6 + [[*, *]] --> s7}]
+[{s7 + [[*, *]] --> s8}]
+[{s8 + [[*, *]] --> s8}]
+DEBUG: replacing K ((pastCrossing) ∨ (F (turnRight))) with formula (s4 || s6 || s7 || s8)
+------BENCHMARK RESULTS------
+Time elapsed during candidateStateSearch(): 0.148s.
+Time elapsed during kbsc(): 0.0032s.
+Time elapsed during main(): 0.1604s.
+Output file saved at /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy
+
+continue synthesis using Bosy:
+./bosy_run.sh /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy --synthesize
+	Command being timed: "./run.sh -i crossingv1.json -d crossingv1.gv --benchmark --aalta"
+	User time (seconds): 0.11
+	System time (seconds): 0.05
+	Percent of CPU this job got: 91%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19996
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 9972
+	Voluntary context switches: 109
+	Involuntary context switches: 107
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 728
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox%  

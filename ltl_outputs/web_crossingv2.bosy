@@ -1,10 +1,4 @@
 {
-  "guarantees" : [
-    "F (go)",
-    "(break) U ((((s4) || (s6)) || (s7)) || (s8))",
-    "G ((go) <-> ((((s4) || (s6)) || (s7)) || (s8)))",
-    "G ((go) -> (! (break)))"
-  ],
   "outputs" : [
     "break",
     "go"
@@ -29,13 +23,13 @@
     "G ((s7) -> ((((drive) && (turnLeft)) && (! (indicateLeft))) && (! (pastCrossing))))",
     "G ((s8) -> ((((pastCrossing) && (! (drive))) && (! (indicateLeft))) && (! (turnLeft))))",
     "G ((! (s0)) || ((true) && (X (s1s2))))",
-    "G ((! (s1s2)) || (((true) && (X (s4))) || ((true) && (X (s3)))))",
+    "G ((! (s1s2)) || (((true) && (X (s3))) || ((true) && (X (s4)))))",
     "G ((! (s3)) || ((true) && (X (s5))))",
     "G ((! (s4)) || ((true) && (X (s6))))",
     "G ((! (s5)) || ((true) && (X (s8))))",
     "G ((! (s6)) || ((true) && (X (s7))))",
     "G ((! (s7)) || ((true) && (X (s8))))",
-    "G ((! (s8)) || (⊥))"
+    "G ((! (s8)) || ((true) && (X (s8))))"
   ],
   "semantics" : "mealy",
   "inputs" : [
@@ -51,5 +45,11 @@
     "s7",
     "s8",
     "turnLeft"
+  ],
+  "guarantees" : [
+    "F (go)",
+    "(break) U ((((s4) || (s6)) || (s7)) || (s8))",
+    "G ((go) <-> ((((s4) || (s6)) || (s7)) || (s8)))",
+    "G ((go) -> (! (break)))"
   ]
 }

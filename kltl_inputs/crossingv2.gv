@@ -19,4 +19,5 @@ digraph graphname {
         s5 -> s8 [label=""];
         s6 -> s7 [label=""];
         s7 -> s8 [label=""];
+	s8 -> s8 [label=""];
 }

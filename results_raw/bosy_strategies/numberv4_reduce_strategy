@@ -1,0 +1,84 @@
+daniel-VirtualBox% ./benchmark.sh numberv4_reduce
+info: automaton contains 29 states
+info: build safety game with k=1
+info: found solution with rejecting counter RejectingCounter(value: 1)
+info: extract game based solution
+info: build encoding for bound 1
+info: found solution with NumberOfStates(value: 1) states
+REALIZABLE
+aag 21 17 1 4 3
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36 0
+0
+38
+0
+42
+38 37 10
+40 37 12
+42 40 11
+i0 s0
+i1 s1s2
+i2 s2
+i3 s2s5
+i4 s2s5s6
+i5 s2s6
+i6 s3
+i7 s4
+i8 s5
+i9 s5s6
+i10 s6
+i11 s7
+i12 s8
+i13 y1
+i14 y2
+i15 y3
+i16 y4
+l0 __latch_s0
+o0 o4
+o1 o3
+o2 o1
+o3 o2
+c
+/tmp/.OkRB4F
+This file was written by ABC on Thu Aug 20 23:44:58 2020
+For information about AIGER format, refer to http://fmv.jku.at/aiger
+	Command being timed: "./run.sh /home/daniel/benchmarks/ltl_outputs/web_numberv4_reduce.bosy --synthesize"
+	User time (seconds): 206.99
+	System time (seconds): 3.14
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:30.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2276796
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 109
+	Minor (reclaiming a frame) page faults: 822648
+	Voluntary context switches: 381
+	Involuntary context switches: 748
+	Swaps: 0
+	File system inputs: 27992
+	File system outputs: 504
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox% 
