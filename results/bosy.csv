@@ -1,0 +1,18 @@
+﻿Problem;wall-clock;max resident set size;Input States;Obs States;outputAPs;
+ampelv3;0:00,82;60184;6;6;1;
+crossingv1;0:02,38;35120;9;8;2;
+crossingv2;0:02,24;35208;9;8;2;
+detect_globally;0:00,66;168796;5;4;1;
+detect_next;0:00,66;168896;5;4;1;
+electricity_repair;0:00,70;167992;3;4;2;
+light_bulb;0:00,73;118820;5;6;1;
+nas_01;0:00,80;156156;4;4;1;
+numberv1;0:01,07;154908;5;6;2;
+numberv4_reduce;3:30,47;2276796;9;13;4;
+numberv4;3:49,77;2279128;9;13;4;
+numberv6_reduce;X;X;13;23;6;
+numberv6;X;X;13;23;6;
+random_01;0:02,57;35400;10;9;1;
+three_coins;35:25,07;9779324;9;15;3;
+;;;;;;
+;;;;;;
