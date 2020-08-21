@@ -1,0 +1,114 @@
+daniel-VirtualBox% ./benchmark.sh crossingv2
+info: automaton contains 13 states
+info: build safety game with k=1
+info: found solution with rejecting counter RejectingCounter(value: 1)
+info: extract game based solution
+info: build encoding for bound 1
+info: found solution with NumberOfStates(value: 1) states
+REALIZABLE
+aag 59 12 1 2 46
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26 0
+88
+118
+28 19 5
+30 24 20
+32 30 15
+34 32 28
+36 19 14
+38 18 15
+40 39 37
+42 41 4
+44 42 21
+46 44 25
+48 47 35
+50 49 2
+52 23 7
+54 52 17
+56 13 11
+58 56 54
+60 58 9
+62 60 50
+64 25 6
+66 64 22
+68 13 9
+70 17 15
+72 70 11
+74 21 19
+76 74 5
+78 76 3
+80 78 72
+82 80 68
+84 82 66
+86 85 63
+88 87 27
+90 25 2
+92 90 23
+94 92 27
+96 12 8
+98 97 69
+100 98 72
+102 17 10
+104 16 11
+106 105 103
+108 107 15
+110 108 68
+112 111 101
+114 113 76
+116 114 7
+118 116 94
+i0 drive
+i1 indicateLeft
+i2 pastCrossing
+i3 s0
+i4 s1s2
+i5 s3
+i6 s4
+i7 s5
+i8 s6
+i9 s7
+i10 s8
+i11 turnLeft
+l0 __latch_s0
+o0 go
+o1 break
+c
+/tmp/.AZzcrN
+This file was written by ABC on Fri Aug 21 13:23:49 2020
+For information about AIGER format, refer to http://fmv.jku.at/aiger
+	Command being timed: "./run.sh /home/daniel/benchmarks/ltl_outputs/web_crossingv2.bosy --synthesize"
+	User time (seconds): 2.01
+	System time (seconds): 0.19
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 28283
+	Voluntary context switches: 169
+	Involuntary context switches: 34
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 112
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+daniel-VirtualBox% 
+
