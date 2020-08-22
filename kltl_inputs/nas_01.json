@@ -3,7 +3,7 @@
     "hiddenAP": ["sleep", "backupinit", "backup", "backupcomplete"],
     "outputs": ["g1"],
     "guarantees": [
-        "G (K(backupinit ∨ backup) -> F(g1))",
+        "G (K(backupinit ∨ backup) -> F(K(backupcomplete)))",
         "(¬g1) U K(backupinit)",
     ],
 }
