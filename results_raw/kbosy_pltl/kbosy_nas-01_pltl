@@ -1,31 +1,38 @@
 daniel-VirtualBox% ./benchmark.sh nas_01
 LOADING: Automata Info read successfully
 loading dot-graph from path: /home/daniel/benchmarks/kltl_inputs/nas_01.gv
+ALGO: checking knowledge condition ((backupinit_p) | (backup_p))
+ALGO: candidate state confirmed for s1
+ALGO: candidate state confirmed for s2
+ALGO: checking knowledge condition (backupinit_p)
+ALGO: candidate state confirmed for s1
+DEBUG: replacing K ((backupinit) ∨ (backup)) with formula (s1 || s2)
+DEBUG: replacing K (backupinit) with formula (s1)
 ------BENCHMARK RESULTS------
-Time elapsed during candidateStateSearch(): 0.0014s.
-Time elapsed during kbsc(): 0.0005s.
-Time elapsed during main(): 0.0084s.
+Time elapsed during candidateStateSearch(): 0.1016s.
+Time elapsed during kbsc(): 0.0012s.
+Time elapsed during main(): 0.11s.
 Output file saved at /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy
 
 continue synthesis using Bosy:
 ./bosy_run.sh /home/daniel/Desktop/temp_after_automata_translation_transformed.bosy --synthesize
 	Command being timed: "./run.sh -i nas_01.json -d nas_01.gv --benchmark"
-	User time (seconds): 0.01
-	System time (seconds): 0.00
-	Percent of CPU this job got: 85%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.02
+	User time (seconds): 0.09
+	System time (seconds): 0.02
+	Percent of CPU this job got: 79%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.14
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 19044
+	Maximum resident set size (kbytes): 19404
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 1104
-	Voluntary context switches: 5
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 6499
+	Voluntary context switches: 117
 	Involuntary context switches: 19
 	Swaps: 0
-	File system inputs: 0
+	File system inputs: 1840
 	File system outputs: 8
 	Socket messages sent: 0
 	Socket messages received: 0
