@@ -1,0 +1,24 @@
+digraph graphname {
+        _init [style="invis"];
+        _init -> s0[label=""];
+        s0[label="{sleep1, sleep2}"];
+        s1[label="{backupinit1, r1, sleep2}"];
+        s2[label="{sleep1, backupinit2, r2}"];
+        s3[label="{backupcomplete1, sleep2}"];
+        s4[label="{backupinit1, r1, backupinit2, r2}"];
+        s12[label="{backupinit1, r1, backupcomplete2}"];
+        s21[label="{backupcomplete1, backupinit2, r2}"];
+        s0 -> s1 [label=""];
+        s0 -> s2 [label=""];
+        s1 -> s1 [label="(¬g1)"];
+        s2 -> s2 [label="(¬g2)"];
+        s1 -> s4 [label="(¬g1)"];
+        s2 -> s4 [label="(¬g2)"];
+        s1 -> s3 [label="(g1)"];
+        s3 -> s0 [label=""];
+        s4 -> s4 [label="(¬g2 ∧ ¬g1)"];
+        s4 -> s21 [label="(g1)"];
+        s4 -> s12 [label="(g2)"];
+        s12 -> s1 [label=""];
+        s21 -> s2 [label=""];
+}
